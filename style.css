@@ -141,46 +141,53 @@ body {
   gap: 2px;
   margin-bottom:10px;
   width: 100%;
-  background-color: crimson;
+ /*ackground-color: crimson;*/
   height: 68vh;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 #myself div {
   display: flex;
   flex-direction: row;
-  gap:0px;
+  gap:10px;
   justify-content: space-evenly;
   align-items: center;
 
 }
 
 #myself div p{  
-  border-bottom-left-radius: 10px;
-  row-gap: 10px;
-  background-color: blue;
+  border-bottom-left-radius: 15px;
+  row-gap: 20px;
+  background-color: rgb(19, 20, 66);
   color: white;
-  padding: 10px;
+  padding: 20px;
   margin-bottom:5px;
-  max-width: 210px;
+  max-width: 250px;
 
 }
 /*#myself div:nth-child(2){
   margin-bottom: 50px;*/
 
-/* #myself div:nth-child(4){
+ #myself div:nth-child(4){
   margin-bottom: 1px;
   margin-top: 1px;
-} */
+} 
 #tec{
-margin-bottom:px;
+padding-top:40px;
 margin-left:10px;
 font-size: 25px;
 text-align: center;
+font-size: 30px;
+color: rgb(26, 43,75);
+font-variant: small-caps;
 }
 
 #soft{
   margin-left: 10px;
   font-size: 25px;
+  padding-top:10px ;
+  font-size:30px ;
+  color: rgb(26, 43, 75);
+  font-variant: small-caps;
   
 }
 

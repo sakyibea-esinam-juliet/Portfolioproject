@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav id="nav">
@@ -21,20 +22,43 @@
         <li>Skills</li>
         <li>Experience</li>
       </ul>
+      <div>
+        <ul><li><a href="https://www.linkedin.com/in/juliet-esinam-sakyibea-457007362?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8hg7WetuSpK93FA6xBdgVw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #fffdfd;"></i></a></li>
+
+        <li><a href="https://github.com/sakyibea-esinam-juliet" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #fffefe;"></i></a></li>
+        </ul>
+      </div>
     </nav>
     <section id="hero">
       <div class="profile-text">
         <p>Junior Back End Developer.</p>
         <h1>Hello,I am SAKYIBEA.E.JULIET</h1>
         <div>
-          I am a junior web developer,<br />specialized in backend
-          experiences.<br />
+          I am a junior web developer,<br />specialized in backend experiences.
           Currently focused on working on websites that brings out purpose.
         </div>
-        <button>Download<br />Resume</button>
+        <button>Download Resume</button>
       </div>
+
       <div class="profile-pic">
-        <img />
+        <img src="./Assets/web.png" />
+      </div>
+    </section>
+    <section id="projects">
+      <div id="pro">PROJECTS</div>
+      <div id="jects">
+        <div id="block">
+          Personal portfolio<br />a website that showcases my
+          skills,Experienceand projects
+        </div>
+        <div id="block">
+          Weather app<br />an app that displays the curernt weather and forcast
+          for a given loaction
+        </div>
+        <div id="block">
+          Blog website<br />a website that allows users to create,edit and
+          delete blogs
+        </div>
       </div>
     </section>
     <section id="next-page">
@@ -51,33 +75,61 @@
             Laravel.
           </h3>
         </div>
-        <div class="myself">
-          <h4>
-            <span id="skills">SKILLS</span><br />
-            <ul>
-              <li>Proficiency in Programming Languages like Javascript.</li>
-              <br />
-              <li>familarity with frameworks like Node.js, Django, Spring</li>
-              <br />
-              <li>tools and sofware like Git</li>
-              <br />
-              <li>time management</li>
-              <br />
-              <li>Analytical skills</li>
-              <br />
-              <li>collaboration skills</li>
-            </ul>
-          </h4>
+        <div id="myself">
+          <!-- <h4><span id="skills">My SKILLS</span></h4>  -->
+          <div id="tec">My Technical skills</div>
+          <div>
+            <p>Proficiency in Programming Languages like Javascript.</p>
+            <p>familarity with frameworks like Node.js, Django, Spring</p>
+            <p>tools and sofware like Git</p>
+          </div>
+          <div id="soft">My Soft skills</div>
+          <div>
+            <p class="soft-skill">time management</p>
+            <p class="soft-skill">Analytical skills</p>
+            <p class="soft-skill">collaboration skills</p>
+          </div>
         </div>
       </div>
     </section>
-    <section id="projects">
-      <div id="pro">PROJECTS</div>
-      <ul>
-        <li>Personal portfolio</li>
-        <li>Weather app</li>
-        <li>Health website</li>
-      </ul>
+    <section id="expe">
+      <div id="exp">My experiences</div>
+      <div id="expo">
+        <h5>
+          Web dev bootcamps<br /><span class="style">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            minus!</span>
+        </h5>
+        <h5>
+          contribution to open source projects on github<br /><span class="style">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+        </h5>
+        <h5>
+          freelance work<br /><span class="style">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, pariatur.</span>
+        </h5>
+        <h5>
+          responsive website designs<br /><span class="style">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            culpa!</span>
+        </h5>
+      </div>
+      <!-- <div>CONTACT SECTION</div> -->
     </section>
+    <section id="contacts">
+      <div>
+        <h4 id="con">Contacts</h4>
+        <p id="tact">Have a projects?<br />Let's talk!</p>
+      </div>
+      <form>
+       
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="email" placeholder="Email"> 
+        <textarea name="" id="" cols="40" rows="10" placeholder="What's on your mind?"></textarea>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </section>
+    
+    
   </body>
 </html>

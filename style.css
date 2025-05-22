@@ -10,15 +10,16 @@ body {
 #hero {
   display: flex;
   flex-direction: row;
-  background-color: rgb(170, 152, 152);
+  /* background-color: rgb(170, 152, 152);*/
   width: 95%;
-  height: 130vh;
+  height: 94vh;
   margin-left: 30px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
   /* background-blend-mode:;*/
 }
+
 #nav {
   display: flex;
   flex-direction: row;
@@ -44,51 +45,53 @@ body {
 .profile-text {
   margin-left: 70px;
   margin-bottom: 100px;
+  /* border: 1px solid black; */
   /*background-color: rgb(92, 56, 56);*/
-  width: 50%;
+  width: 60%;
   margin-top: 50px;
   /* background-color: rgb(92, 89, 89);*/
 }
 
 .profile-pic {
   opacity: 0.8;
-  margin-top: 50px;
-  width: 50%;
-  margin-bottom: 100px;
-  background-image: url(./Assets/web.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-color: rgb(54, 50, 50);*/
-  margin-right: 30px;
+  width: 40%;
+  /* border: 1px solid black; */
+  height: 80%;
+}
+
+.profile-pic img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-position: 75% 25%;
 }
 .profile-text p {
   font-size: 30px;
-  margin-top: 200px;
-  margin-left: 120px;
   font-style: oblique;
+  margin-top: 20px;
 }
 
 .profile-text h1 {
+  margin-top: 20px;
   font-size: 40px;
   color: rgb(70, 66, 126);
-  margin-left: 120px;
+  
 }
 .profile-text div {
   margin-top: 30px;
   font-size: 30px;
   font-style: italic;
-  margin-left: 120px;
 }
 
 #hero button {
   margin-left: 150px;
   background-color: rgb(55, 64, 94);
   border-radius: 30px;
-  width: 160px;
+  width: 200px;
   padding: 10px;
   margin-top: 30px;
   color: rgb(223, 223, 200);
+  font-size: 20px;
 }
 
 #hero button:hover {
@@ -108,7 +111,7 @@ body {
   background-image: url(./Assets/OWN-Concepts-0445.jpg);
   background-size: cover;
   max-width: 400px;
-  margin-left: 100px;
+  margin-left: 30px;
 }
 #next {
   width: 60%;
@@ -124,71 +127,216 @@ body {
 #next h2 {
   margin-bottom: 10px;
   color: rgb(23, 46, 90);
+  font-variant: small-caps;
 }
 #next h3 {
   font-style: italic;
+  color: rgb(25, 47, 77);
 }
 
-.myself {
-  /* background-color: blue;*/
-  gap: 50px;
-  margin-top: 40px;
+#myself {
+  display: flex;
+  flex-direction:column;
+  list-style-type: none;
+  gap: 2px;
+  margin-bottom:10px;
   width: 100%;
+  background-color: crimson;
+  height: 68vh;
+  overflow-y: auto;
+}
+#myself div {
+  display: flex;
+  flex-direction: row;
+  gap:0px;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 
-.myself h4 {
+#myself div p{  
+  border-bottom-left-radius: 10px;
+  row-gap: 10px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin-bottom:5px;
+  max-width: 210px;
+
+}
+/*#myself div:nth-child(2){
+  margin-bottom: 50px;*/
+
+/* #myself div:nth-child(4){
+  margin-bottom: 1px;
+  margin-top: 1px;
+} */
+#tec{
+margin-bottom:px;
+margin-left:10px;
+font-size: 25px;
+text-align: center;
+}
+
+#soft{
+  margin-left: 10px;
+  font-size: 25px;
+  
+}
+
+
+/* #myself h4 {
   row-gap: 10px;
   font-size: 20px;
-  /*background-color: aquamarine;*/
   border: 10px;
   margin-top: 20px;
-}
+} */
 
-.myself h4 ul {
-  /* background-color: rgb(122, 26, 85);*/
-  list-style-type: square;
-  width: 50%;
-}
-
-.myself h5 ul {
-  list-style-type: square;
-  width: 50%;
-}
-
-#myself h6 {
-  font-size: 30px;
-}
 #skills {
   font-size: 30px;
   color: rgb(81, 84, 148);
   font-style: oblique;
+  margin-left: 300px;
+  font-variant: small-caps;
 }
+
 #projects {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items:center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
-#projects ul {
+#block {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  column-gap: 80px;
-  margin-top: 100px;
-  align-items: center;
-  margin-right: 500px;
+  border: 2px solid rgb(80, 63, 88);
+  background-color: rgb(59, 56, 87);
+  row-gap: 10px;
+  border-radius: 20px;
+  max-width: 250px;
+  color: white;
+  padding: 50px;
+  /* margin-right: 120px;*/
+}
+#jects {
+  /* border: 40px; */
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+#block:hover {
+  background-color: rgb(84, 109, 219);
+}
+#pro {
+  font-size: 40px;
+  font-weight: 10px;
+  color: blueviolet;
+  margin-bottom: 10px;
+}
+
+#expe {
+  display: flex;
+  flex-direction:column;
+}
+#expo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  row-gap: 20px;
+  margin-left: 80px;
+  margin-top: 20px;
+  color: white;
+}
+#expo h5 {
+  border: 2px solid rgb(134, 178, 214);
+  padding: 20px;
+  background-color: rgb(37, 67, 122);
+  border-radius: 40px;
+  font-size: 20px;
+}
+#expo h5:hover {
+  background-color: rgb(30, 35, 51);
+}
+#exp {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 500px;
+  font-variant: small-caps ;
+  color: rgb(26, 43, 75);
+}
+.style{
+  font-size: 15px;
+}
+#contacts{
+  display: flex;
+  flex-direction: row;
+ background-color: rgb(26, 43, 75);
+  width: 90%;
+  height: 50vh;
+  margin-top: 50px;
+  margin-left:40px ;
+  gap: 170px;
+  padding: 50px;
+  color: white;
+}
+#con{
+margin-bottom: 10px;
+font-style: italic;
+border-left: 2px solid white;
+font-size: 30px;
+}
+#tact{
+font-size: 60px;
+}
+
+#mail{
+ gap: 40px;
+ /*background-color: rgb(163, 16, 16);*/
+ 
+}
+#mail p{
+ /* background-color: blue;*/
+  margin-bottom: 80px;
+  border-bottom: 2px solid white;
+  font-size: 20px;
   
 }
-#projects ul li{
-    /* border: 40px; */
-    border:2px solid rgb(64, 41, 75);
-    padding: 20px;
+
+form{
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  row-gap: 2px;
+  height: 300px;
+  width: 320px;
 }
-#pro{
-    
-    margin-left: 500px;
-    padding-bottom: 60px;
-    font-size: 30px;
-    font-weight: 10px;
-    color: blueviolet;
+
+form textarea{
+  resize: none;
+  padding: 5px 12px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+form input{
+  padding: 5px 12px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+form #name{
+  margin-top: 20px; ;
+}
+
+form #submit{
+  width: 170px;
+  padding: 10px;
+  background-color: rgb(27, 95, 184);
+  border-radius:20px;
 }

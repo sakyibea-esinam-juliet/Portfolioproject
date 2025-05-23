@@ -252,21 +252,22 @@ font-variant: small-caps;
 #expo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
-  row-gap: 20px;
+  column-gap: 1px;
+  row-gap: 40px;
   margin-left: 80px;
   margin-top: 20px;
-  color: white;
+  color: ;
 }
 #expo h5 {
-  border: 2px solid rgb(134, 178, 214);
-  padding: 20px;
-  background-color: rgb(37, 67, 122);
-  border-radius: 40px;
-  font-size: 20px;
+  border: 2px solid rgb(37, 67, 122);
+  padding: 30px;
+  background-color: rgb(206, 209, 214);
+  font-size: 25px;
+  max-width:400px ;
+  margin-left: 60px;
 }
 #expo h5:hover {
-  background-color: rgb(30, 35, 51);
+  background-color: rgb(75, 82, 104);
 }
 #exp {
   font-size: 40px;
@@ -346,4 +347,11 @@ form #submit{
   padding: 10px;
   background-color: rgb(27, 95, 184);
   border-radius:20px;
+}
+  #submit:hover{
+  background-color: rgb(72, 81, 136);
+}
+
+#mail{
+  margin-top: 10px;
 }

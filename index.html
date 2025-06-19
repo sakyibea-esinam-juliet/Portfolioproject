@@ -96,9 +96,9 @@
           <h3>
             I have a strong background in web development as a junior
             developer.<br />
-            My skills include HTML, CSS, JavaScript,MongoDB,and MySQL.<br />I am
+            My skills include HTML, CSS, JavaScript and MongoDB.<br />I am
             also familiar with popular frameworks such as Express.js and
-            Laravel.
+            Node.js.
           </h3>
         </div>
         <div id="myself">
@@ -151,7 +151,7 @@
     <section id="contacts">
       <div>
         <h4 id="con">Contacts</h4>
-        <p id="tact">Have a projects?<br />Let's talk!</p>
+        <p id="tact">Have a project?<br />Let's talk!</p>
         <p id="mail">Email:sejuliet0@gmail.com</p>
       </div>
       <form action="https://formspree.io/f/mjkrodno" method="POST">
@@ -159,11 +159,10 @@
   <input type="email" name="email" placeholder="Email" required />
   <textarea name="message" placeholder="What's on your mind?" required></textarea>
 
-  <!-- Optional: Custom success message -->
-  <input type="hidden" name="_redirect" value="https://julietportfolioproject.netlify.app/thank-you.html" />
+   <input type="hidden" name="_redirect" value="https://julietportfolioproject.netlify.app/thank-you.html" />
 
-  <button type="submit">Submit</button>
-</form>
+  <button type="submit">Submit</button> </form>
+
 
         <!-- <input type="text" name="name" id="name" placeholder="Name" />
         <input type="email" placeholder="Email" />
@@ -175,6 +174,41 @@
           placeholder="What's on your mind?"
         ></textarea>
         <input type="submit" value="Submit" id="submit" /> -->
+        <!-- <form id="contactForm">
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <textarea name="message" placeholder="What's on your mind?" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+
+    try {
+      const response = await fetch('http://localhost:5000/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      alert(result.message);
+    } catch (error) {
+      alert('Something went wrong. Try again!');
+    }
+  });
+</script> -->
       
     </section>
   </body>

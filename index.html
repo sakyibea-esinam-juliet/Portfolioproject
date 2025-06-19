@@ -154,8 +154,18 @@
         <p id="tact">Have a projects?<br />Let's talk!</p>
         <p id="mail">Email:sejuliet0@gmail.com</p>
       </div>
-      <form>
-        <input type="text" name="name" id="name" placeholder="Name" />
+      <form action="https://formspree.io/f/mjkrodno" method="POST">
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <textarea name="message" placeholder="What's on your mind?" required></textarea>
+
+  <!-- Optional: Custom success message -->
+  <input type="hidden" name="_redirect" value="https://julietportfolioproject.netlify.app/thank-you.html" />
+
+  <button type="submit">Submit</button>
+</form>
+
+        <!-- <input type="text" name="name" id="name" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <textarea
           name=""
@@ -164,8 +174,8 @@
           rows="10"
           placeholder="What's on your mind?"
         ></textarea>
-        <input type="submit" value="Submit" id="submit" />
-      </form>
+        <input type="submit" value="Submit" id="submit" /> -->
+      
     </section>
   </body>
 </html>
